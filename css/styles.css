@@ -1,0 +1,354 @@
+/* global */
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.anchor {
+  padding-top: 50px; 
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #444;
+  font-weight: 200;
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 0;
+  color: #444;
+  font-weight: 200;
+}
+
+p {
+  color: #444;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+br {
+  display: none;
+}
+
+.read-more-hidden { 
+  display: none; 
+}
+
+.custom-button {
+  color: #444;
+  transition: color 600ms;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #444;
+  padding: 14px 20px;
+}
+
+.custom-button:hover {
+  color: #3E51A3;
+}
+
+/* nav */
+
+.navbar {
+  font-size: 1.1em;
+}
+.project-name {
+  padding: 15px 0;
+}
+
+.project-name a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+  transition: color 600ms;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #3E51A3;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #3E51A3;
+  color: #fff;
+}
+
+/* header */
+
+.masthead {
+  background-image: url('../img/hero-2.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.masthead-intro {
+  position: absolute;
+  top: 30%;
+}
+
+.masthead-intro h1 {
+  margin: 0;
+}
+
+.masthead-intro p {
+  font-size: 1.7em;
+  font-weight: 300;
+  margin: 10px 0 25px;
+}
+
+.masthead-intro a,
+.read-more-button a,
+.contenthover a {
+  color: #444;
+  transition: color 600ms;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #444;
+  padding: 14px 20px;
+}
+
+.masthead-intro a:hover,
+.read-more-button a:hover,
+.contenthover a:hover {
+  color: #3E51A3;
+}
+
+/* about */
+
+#about {
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
+}
+
+.headshot img:last-child {
+  display: none;
+}
+.headshot:hover img:first-child {
+  display: none;
+}
+.headshot:hover img:last-child {
+  display: inline-block;
+}
+
+.about-keywords {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.about-keywords p {
+  padding-bottom: 4px;
+}
+
+.about-keywords span {
+  color: #777;
+}
+
+.about-skills {
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.about-skills span {
+  color: #777;
+}
+
+.modal-body {
+  height: 500px;
+}
+
+#modal-frame {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.about-intro {
+  font-size: 1.1em;
+  width: 50%;
+  margin: 30px 0;
+}
+
+.about-development h2 {
+  display: inline;
+  font-size: 1.6em;
+  margin: 2px 0 10px 0;
+}
+
+.about-development {
+  font-size: 1.1em;
+}
+
+.about-development i {
+  font-size: 1.6em;
+}
+
+/* work */
+
+#work {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+#work .img-responsive {
+  display: inline;
+}
+
+.img-left {
+  padding-right: 0;
+}
+
+.img-right {
+  padding-left: 0;
+}
+
+.img-last {
+  padding-bottom: 50px;
+}
+
+/*image hover overlay*/
+.contenthover { padding:20px 20px 10px 20px; }
+.contenthover, .contenthover h3, contenthover a { color:#fff; }
+.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+.contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+.contenthover a.mybutton:hover { background:#34742d }
+
+/* contact */
+
+#contact {
+  background-color: #f5f5f5;
+  padding-bottom: 50px;
+}
+
+.contact-info {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.contact-info p {
+  padding-bottom: 4px;
+}
+
+.contact-info span {
+  color: #777;
+}
+
+.map-container {
+  margin-top: 10px;
+}
+
+/* footer */
+
+#footer {
+  background-color: #3E51A3;
+  height: 81px; 
+  line-height: 78px;
+}
+
+.copyright {
+  display: inline;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.social-icons {
+  display: inline;
+}
+
+.social-icons a {
+  color: #777;
+  font-size: 1.6em;
+  padding-left: 10px;
+  transition: color 600ms;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+/* faq */
+.faq-questions {
+  margin-bottom: 50px;
+}
+
+/* MOBILE */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  
+  /*about*/
+  .headshot {
+    padding-bottom: 12px;
+  }
+
+  .about-intro {
+    width: 100%;
+  }
+
+  .about-development {
+    padding-bottom: 15px;
+  }
+
+  .about-development h2 {
+    font-size: 1.5em;
+  }
+  
+  /*work*/
+  .img-left {
+    padding-right: 15px;
+  }
+
+  .img-right {
+    padding-left: 15px;
+  }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+  .masthead-intro p {
+    font-size: 1.2em;
+    margin-bottom: 12px; 
+  }
+
+  br {
+    display: block;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+
