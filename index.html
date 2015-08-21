@@ -21,7 +21,6 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="js/img-plugin.js"></script>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -130,8 +129,63 @@
         </div>
       </div>
     </section>
-
+    
     <section id="work">
+      <div class="container anchor">
+        <h1>Work.</h1>
+        <div class="row text-center">
+          <div class="col-md-6 col-xs-12 img-left">
+            <ul id="da-thumbs" class="da-thumbs">
+              <li>
+                <a href="#">
+                <img src="img/work-1.jpg" class="img-responsive" />
+                <div>
+                  <span>Natalie & Justin Cleaning by Justin Younger</span>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xs-12 img-right">
+            <ul id="da-thumbs" class="da-thumbs">
+              <li>
+                <a href="#">
+                <img src="img/work-2.jpg" class="img-responsive" />
+                <div>
+                  <span>Natalie & Justin Cleaning by Justin Younger</span>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xs-12 img-left">
+            <ul id="da-thumbs" class="da-thumbs">
+              <li>
+                <a href="#">
+                <img src="img/work-3.jpg" class="img-responsive" />
+                <div>
+                  <span>Natalie & Justin Cleaning by Justin Younger</span>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xs-12 img-right">
+            <ul id="da-thumbs" class="da-thumbs">
+              <li>
+                <a href="#">
+                <img src="img/work-4.jpg" class="img-responsive" />
+                <div>
+                  <span>Natalie & Justin Cleaning by Justin Younger</span>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </section>
+<!--     <section id="work">
       <div class="container anchor">
         <h1>Work.</h1>
         <div class="row text-center">
@@ -166,7 +220,8 @@
               <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
               <a href="#" class="btn btn-md">Check it out!</a>
             </div>
-          </div>
+          </div> -->
+
           <!-- <div class="read-more-hidden col-md-6 col-xs-12 img-left">
             <img class="img-responsive work-img" src="http://placehold.it/600x500">
             <div class="contenthover">
@@ -187,8 +242,9 @@
         <div class="read-more-button text-center">
           <a href="javascript:;" class="read-more">More</a>
         </div> -->
-      </div>
-    </section>
+
+<!--       </div>
+    </section> -->
 
     <section id="contact">
       <div class="container anchor">
@@ -289,6 +345,12 @@
     </footer>
 
     <!-- JavaScript files here -->
+    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $(' #da-thumbs > li ').hoverdir();
+            });
+        </script>
     <script type="text/javascript" src="js/app.js"></script>
 
   </body>
