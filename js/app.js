@@ -12,12 +12,6 @@ $(document).ready(function(){
     return false;
   });
 
-  // work image hover overlay
-  $('.work-img').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-  });
-
   // see more work button
   $('.read-more').click(function(){
     $('.read-more-hidden').slideToggle();
