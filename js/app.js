@@ -13,13 +13,30 @@ $(document).ready(function(){
   });
 
   // see more work button
-  $('.read-more').click(function(){
-    $('.read-more-hidden').slideToggle();
-    $('.img-last').css("padding-bottom", "0");
-      // if (!$(this).hasClass('less')) $(this).text('Hide').addClass('less');
-      // else $(this).text('More').removeClass('less');
-      $(this).hide();
+  // $('.read-more').click(function(){
+  //   $('.read-more-hidden').slideToggle();
+  //   $('.img-last').css("padding-bottom", "0");
+  //     // if (!$(this).hasClass('less')) $(this).text('Hide').addClass('less');
+  //     // else $(this).text('More').removeClass('less');
+  //     $(this).hide();
+  // });
+
+  // character counter on text input field
+  $("textarea").on("keyup", function(){
+    var charCount = $("textarea").val().length;
+    $("#char-count").html(charCount);
+    if (charCount > 50) {
+      $("#char-count").css("color", "#FF0000");
+    } else {
+      $("#char-count").css("color", "#3E51A3");
+    };
   });
+
+  //form send button
+  $('#send-button').on("click", function(){
+    var errorMsg = "I'm sorry, my form is not working. Please copy your message and send it to:\n cato.benjaminsen@gmail.com. Thanks!";
+    alert(errorMsg);
+  })
 
   // google maps api
   function initialize() {

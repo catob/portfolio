@@ -121,7 +121,7 @@ br {
 }
 
 .masthead-intro a,
-.read-more-button a,
+.hover-content a,
 .contenthover a {
   color: #444;
   transition: color 600ms;
@@ -134,7 +134,7 @@ br {
 }
 
 .masthead-intro a:hover,
-.read-more-button a:hover,
+.hover-content a:hover,
 .contenthover a:hover {
   color: #3E51A3;
 }
@@ -225,32 +225,46 @@ br {
 
 }
 
-  .img-right {
+.img-right {
   padding-left: 0;
 }
 
 /*image hover overlay*/
 .da-thumbs li {
   float: left;
-  /*margin: 5px;*/
   background: #fff;
-/*  padding: 8px;*/
   position: relative;
   display: inline-block;
 }
-.da-thumbs li a,
-.da-thumbs li a img {
+.da-thumbs li,
+.da-thumbs li img {
   display: block;
   position: relative;
 }
-.da-thumbs li a {
+.da-thumbs li {
   overflow: hidden;
 }
-.da-thumbs li a div {
+.da-thumbs li div {
   position: absolute;
-  background: rgba(75,75,75,0.7);
+  background: rgba(75,75,75,0.9);
   width: 100%;
   height: 100%;
+}
+
+.hover-content {
+  color: #fff;
+  padding: 10%;
+  font-size: 1.2em;
+}
+
+.hover-content p {
+  color: #fff;
+}
+
+.hover-content a {
+  color: #fff;
+  border-color: #fff;
+  margin-top: 5%;
 }
 
 /* contact */
@@ -277,6 +291,20 @@ br {
   margin-top: 10px;
 }
 
+.my-label {
+  margin-top: 4px;
+}
+
+#send-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+#char-count {
+  display: inline;
+  float: right;
+  margin-top: 10px;
+}
 
 /* footer */
 
