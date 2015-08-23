@@ -12,15 +12,6 @@ $(document).ready(function(){
     return false;
   });
 
-  // see more work button
-  // $('.read-more').click(function(){
-  //   $('.read-more-hidden').slideToggle();
-  //   $('.img-last').css("padding-bottom", "0");
-  //     // if (!$(this).hasClass('less')) $(this).text('Hide').addClass('less');
-  //     // else $(this).text('More').removeClass('less');
-  //     $(this).hide();
-  // });
-
   // character counter on text input field
   $("textarea").on("keyup", function(){
     var charCount = $("textarea").val().length;

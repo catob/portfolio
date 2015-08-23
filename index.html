@@ -3,29 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Cato Benjaminsen</title>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
     <!-- Custom styles -->
     <link href="css/styles.css" rel="stylesheet">
-    
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,300' rel='stylesheet' type='text/css'>
-
-    <!-- Google maps -->
+    <!-- Google Maps api -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8BElPaPozNPky-oxaSIEvo_ZyvT4XUI8"></script>
-
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </head>
-
   <body data-spy="scroll" data-target=".navbar" id="top">
     <!-- navbar starts here -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -52,7 +45,7 @@
         </div>    
       </div> <!-- end navcontainer -->
     </nav> <!-- navbar ends here -->
-
+    <!-- Header -->
     <header class="masthead">
       <div id="masthead-overlay">
         <div class="container">
@@ -64,7 +57,7 @@
         </div>
       </div>
     </header>
-
+    <!-- About Section -->
     <section id="about">
       <div class="container anchor">
         <h1>About.</h1>
@@ -86,7 +79,7 @@
             <div class="about-skills">
               <p>HTML5<span> // </span>CSS3<span> // </span>JavaScript<span> // </span>jQuery<span> // </span>Ruby<span> // </span>Git</p>
             </div>
-            
+            <!-- resume modal -->
             <div class="modal-button">
               <button type="button" class="btn custom-button" data-toggle="modal" data-target=".bs-example-modal-lg">Resume</button>
               <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-backdrop="static" data-keyboard="false">
@@ -104,7 +97,6 @@
               </div>
             </div>
             <!-- modal end -->
-
           </div>
           <div class="col-xs-12">
             <div class="about-intro text-justify">
@@ -129,15 +121,15 @@
         </div>
       </div>
     </section>
-    
+    <!-- Work Section -->
     <section id="work">
       <div class="container anchor">
         <h1>Work.</h1>
         <div class="row text-center">
           <div class="col-md-6 col-xs-12 img-left">
-            <ul class="da-thumbs">
+            <ul class="thumbs">
               <li>
-                <img src="img/work-1.jpg" class="img-responsive" />
+                <img src="img/work-1.jpg" class="img-responsive" alt="Portfolio" />
                 <div class="hover-content">
                   <h3>Portfolio</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ipsa, beatae culpa consequuntur architecto velit! Lorem ipsum dolor sit amet.</p>
@@ -147,11 +139,11 @@
             </ul>
           </div>
           <div class="col-md-6 col-xs-12 img-right">
-            <ul class="da-thumbs">
+            <ul class="thumbs">
               <li>
-                <img src="img/work-2.jpg" class="img-responsive" />
+                <img src="img/work-4.jpg" class="img-responsive" alt="" />
                 <div class="hover-content">
-                  <h3>Portfolio</h3>
+                  <h3>Lovoo Landing Page</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ipsa, beatae culpa consequuntur architecto velit!</p>
                   <a href="#" class="btn btn-md">Check it out</a>
                 </div>
@@ -159,11 +151,11 @@
             </ul>
           </div>
           <div class="col-md-6 col-xs-12 img-left">
-            <ul class="da-thumbs">
+            <ul class="thumbs">
               <li>
-                <img src="img/work-3.jpg" class="img-responsive" />
+                <img src="img/work-3.jpg" class="img-responsive" alt="WhiteSpace Landing Page" />
                 <div class="hover-content">
-                  <h3>Portfolio</h3>
+                  <h3>WhiteSpace Landing Page</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ipsa, beatae culpa consequuntur architecto velit!</p>
                   <a href="#" class="btn btn-md">Check it out</a>
                 </div>
@@ -171,80 +163,21 @@
             </ul>
           </div>
           <div class="col-md-6 col-xs-12 img-right">
-            <ul class="da-thumbs">
+            <ul class="thumbs">
               <li>
-                <img src="img/work-4.jpg" class="img-responsive" />
+                <img src="img/work-2.jpg" class="img-responsive" alt="Karma Landing Page" />
                 <div class="hover-content">
-                  <h3>Portfolio</h3>
+                  <h3>Karma Landing Page</h3>
                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ipsa, beatae culpa consequuntur architecto velit!</p>
                   <a href="#" class="btn btn-md">Check it out</a>
                 </div>
               </li>
             </ul>
           </div>
+        </div>
       </div> 
     </section>
-<!--     <section id="work">
-      <div class="container anchor">
-        <h1>Work.</h1>
-        <div class="row text-center">
-          <div class="col-md-6 col-xs-12 img-left">
-            <img class="img-responsive work-img" src="img/work-1.jpg">
-            <div class="contenthover">
-              <h3>Portfolio</h3>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
-              <a href="#" class="btn btn-md">Check it out!</a>
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 img-right">
-            <img class="img-responsive work-img" src="img/work-2.jpg">
-            <div class="contenthover">
-              <h3>Karma Landing Page</h3>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
-              <a href="#" class="btn btn-md">Check it out!</a>
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 img-left">
-            <img class="img-responsive work-img" src="img/work-3.jpg">
-            <div class="contenthover">
-              <h3>White Space Template</h3>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
-              <a href="#" class="btn btn-md">Check it out!</a>
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 img-right img-last">
-            <img class="img-responsive work-img" src="img/work-4.jpg">
-            <div class="contenthover">
-              <h3>Lovoo Landing Page</h3>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
-              <a href="#" class="btn btn-md">Check it out!</a>
-            </div>
-          </div> -->
-
-          <!-- <div class="read-more-hidden col-md-6 col-xs-12 img-left">
-            <img class="img-responsive work-img" src="http://placehold.it/600x500">
-            <div class="contenthover">
-              <h3>Lorem ipsum dolor</h3>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
-              <a href="#" class="btn btn-md">Check it out!</a>
-            </div>
-          </div>
-          <div class="read-more-hidden col-md-6 col-xs-12 img-right img-last">
-            <img class="img-responsive work-img" src="http://placehold.it/600x500">
-            <div class="contenthover">
-              <h3>Lorem ipsum dolor</h3>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
-              <a href="#" class="btn btn-md">Check it out!</a>
-            </div>
-          </div>
-        </div>  
-        <div class="read-more-button text-center">
-          <a href="javascript:;" class="read-more">More</a>
-        </div> -->
-
-<!--       </div>
-    </section> -->
-
+    <!-- Contact Section -->
     <section id="contact">
       <div class="container anchor">
         <h1>Contact.</h1>
@@ -254,7 +187,6 @@
               <p><span> // </span>Cato Benjaminsen</p>
               <p><span> // </span><i class="fa fa-phone"></i> 49 152 37793797</p>
               <p><span> // </span><i class="fa fa-envelope"></i> cato.benjaminsen@gmail.com</p>
-
               <!-- google maps api -->
               <div class="embed-responsive embed-responsive-16by9 map-container">
                 <div class="embed-responsive-item" id="map-canvas" style="height:291px; max-width:460px;">
@@ -279,7 +211,7 @@
         </div>
       </div>
     </section>
-
+    <!-- FAQ Section -->
     <section id="faq">
       <div class="container anchor">
         <h1>FAQ.</h1>
@@ -308,7 +240,7 @@
             </div>
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
               <div class="panel-body">
-              Pitchfork trust fund meggings fashion axe +1. Aesthetic gastropub trust fund, kogi messenger bag hoodie Bushwick Pitchfork 8-bit chambray bitters readymade hashtag cred sriracha. Raw denim lomo PBR&B 3 wolf moon heirloom Williamsburg master cleanse yr. Quinoa tilde church-key viral Schlitz literally, cliche direct trade McSweeney's Pitchfork freegan cray cronut. DIY mixtape lumbersexual flexitarian occupy. American Apparel ennui disrupt four loko, Tumblr Etsy whatever keytar. Church-key Vice 3 wolf moon forage sriracha fixie.
+              Pitchfork trust fund meggings fashion axe +1. Aesthetic gastropub trust fund, kogi messenger bag hoodie Bushwick Pitchfork 8-bit chambray bitters readymade hashtag cred sriracha. Raw denim lomo PBR&amp;B 3 wolf moon heirloom Williamsburg master cleanse yr. Quinoa tilde church-key viral Schlitz literally, cliche direct trade McSweeney's Pitchfork freegan cray cronut. DIY mixtape lumbersexual flexitarian occupy. American Apparel ennui disrupt four loko, Tumblr Etsy whatever keytar. Church-key Vice 3 wolf moon forage sriracha fixie.
               </div>
             </div>
           </div>
@@ -326,11 +258,10 @@
               </div>
             </div>
           </div>
-       
-      </div>
-
+        </div>
+      </div>  
     </section>
-
+    <!-- Footer -->
     <footer id="footer">
       <div class="container">
         <p class="copyright">&copy; 2015, Cato Benjaminsen</p>
@@ -342,15 +273,13 @@
         </div>
       </div>
     </footer>
-
-    <!-- JavaScript files here -->
+    <!-- JavaScript -->
     <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
         <script type="text/javascript">
             $(function () {
-                $('.da-thumbs > li').hoverdir();
+                $('.thumbs > li').hoverdir();
             });
         </script>
     <script type="text/javascript" src="js/app.js"></script>
-
   </body>
 </html>

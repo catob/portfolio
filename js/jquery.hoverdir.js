@@ -158,7 +158,7 @@
          */
         _getStyle: function (direction) {
             var fromStyle, toStyle,
-                slideFromTop = {'left': '0', 'top': '-100%'},
+            slideFromTop = {'left': '0', 'top': '-100%'},
             slideFromBottom = {'left': '0', 'top': '100%'},
             slideFromLeft = {'left': '-100%', 'top': '0'},
             slideFromRight = {'left': '100%', 'top': '0'},
