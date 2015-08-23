@@ -370,6 +370,20 @@ br {
     padding-left: 15px;
   }
 
+  /*contact*/
+  .contact-info {
+    font-size: 1.2em;
+  }
+
+  /*footer*/
+  .copyright {
+    font-size: 0.7em;
+  }
+
+  .social-icons a {
+    font-size: 1.4em;
+  }
+
 }
 
 /* Landscape phone to portrait tablet */
