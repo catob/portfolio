@@ -360,6 +360,14 @@ br {
   .about-development h2 {
     font-size: 1.5em;
   }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  #modal-frame {
+    padding: 0;
+  }
   
   /*work*/
   .img-left {
