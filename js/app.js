@@ -16,7 +16,7 @@ $(document).ready(function(){
   $("textarea").on("keyup", function(){
     var charCount = $("textarea").val().length;
     $("#char-count").html(charCount);
-    if (charCount > 50) {
+    if (charCount > 500) {
       $("#char-count").css("color", "#FF0000");
     } else {
       $("#char-count").css("color", "#3E51A3");
@@ -24,10 +24,10 @@ $(document).ready(function(){
   });
 
   //form send button
-  $('#send-button').on("click", function(){
-    var errorMsg = "I'm sorry, my form is not working. Please copy your message and send it to:\n cato.benjaminsen@gmail.com. Thanks!";
-    alert(errorMsg);
-  })
+  // $('#send-button').on("click", function(){
+  //   var errorMsg = "I'm sorry, my form is not working. Please copy your message and send it to:\n cato.benjaminsen@gmail.com. Thanks!";
+  //   alert(errorMsg);
+  // })
 
   // google maps api
   function initialize() {
