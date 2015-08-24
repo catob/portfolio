@@ -13,6 +13,10 @@ body {
   display: none;
 }
 
+.appear {
+  opacity:0;
+}
+
 h1 {
   font-size: 3.5em;
   color: #444;

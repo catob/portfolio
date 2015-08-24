@@ -1,5 +1,30 @@
 $(document).ready(function(){
 
+  //animations
+  $('.masthead-intro').fadeIn(1100).removeClass('hidden');
+  $('.masthead-button').fadeIn(1500).removeClass('hidden');
+
+  // $('.masthead-intro').fadeIn(1100, function(){
+  //   $('.masthead-intro').removeClass('hidden');
+  //   $('.masthead-button').fadeIn(1500).removeClass('hidden');
+  // });
+
+/* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+    
+    /* Check the location of each desired element */
+    $('.appear').each( function(i){
+            
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+      /* If the object is completely visible in the window, fade it it */
+      if( bottom_of_window > bottom_of_object ){
+        $(this).animate({'opacity':'1'},700);         
+      }    
+    });  
+  });
+
   // smooth scroll
   var $root = $('html, body');
   $('.navbar-nav a, .masthead-intro a, .project-name a').click(function() {
@@ -22,12 +47,6 @@ $(document).ready(function(){
       $("#char-count").css("color", "#3E51A3");
     };
   });
-
-  //form send button
-  // $('#send-button').on("click", function(){
-  //   var errorMsg = "I'm sorry, my form is not working. Please copy your message and send it to:\n cato.benjaminsen@gmail.com. Thanks!";
-  //   alert(errorMsg);
-  // })
 
   // google maps api
   function initialize() {
