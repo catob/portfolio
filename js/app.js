@@ -24,8 +24,6 @@ $(document).ready(function(){
     });  
   });
 
-  // if ($(window).scrollTop() > $('body').height() / 2) {
-
   // smooth scroll
   var $root = $('html, body');
   $('.navbar-nav a, .masthead-intro a, .project-name a').click(function() {
@@ -36,6 +34,11 @@ $(document).ready(function(){
         window.location.hash = href;
       });
     return false;
+  });
+
+  // collaps mobile nav after selecting mapOptions
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
   });
 
   // character counter on text input field
