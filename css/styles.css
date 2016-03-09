@@ -6,7 +6,7 @@ body {
 }
 
 .anchor {
-  padding-top: 50px; 
+  padding-top: 50px;
 }
 
 .hidden {
@@ -44,8 +44,8 @@ br {
   display: none;
 }
 
-.read-more-hidden { 
-  display: none; 
+.read-more-hidden {
+  display: none;
 }
 
 .custom-button {
@@ -194,14 +194,21 @@ br {
 
 .about-intro {
   font-size: 1.1em;
-  width: 50%;
   margin: 30px 0;
+}
+
+.keywords {
+  margin-bottom: 10px;
 }
 
 .about-development h2 {
   display: inline;
   font-size: 1.6em;
   margin: 2px 0 10px 0;
+}
+
+.about-development p {
+  margin-top: 10px;
 }
 
 .about-development {
@@ -306,7 +313,7 @@ br {
 /* footer */
 #footer {
   background-color: #3E51A3;
-  height: 81px; 
+  height: 81px;
   line-height: 78px;
 }
 
@@ -340,7 +347,7 @@ br {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  
+
   /*about*/
   .headshot {
     padding-bottom: 12px;
@@ -365,7 +372,7 @@ br {
   #modal-frame {
     padding: 0;
   }
-  
+
   /*work*/
   .img-left {
     padding-right: 15px;
@@ -409,7 +416,7 @@ br {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  
+
   .about-keywords {
     padding-top: 10px;
   }
@@ -423,7 +430,7 @@ br {
 
 /*custom for work section*/
 @media (max-width: 991px) {
-  
+
   /*work*/
   .img-left {
     padding-right: 15px;

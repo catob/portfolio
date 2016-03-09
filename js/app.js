@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  //hover effects
+  $(function () {
+    $('.thumbs > li').hoverdir();
+  });
+
   //animations
   $('.masthead-intro').fadeIn(1100).removeClass('hidden');
   $('.masthead-button').fadeIn(1500).removeClass('hidden');
