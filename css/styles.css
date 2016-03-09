@@ -412,6 +412,10 @@ br {
   br {
     display: block;
   }
+
+  #contact {
+    padding-bottom: 50px;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
