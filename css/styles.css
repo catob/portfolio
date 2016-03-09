@@ -158,6 +158,7 @@ br {
 .headshot:hover img:last-child {
   display: inline-block;
 }
+/*end*/
 
 .about-keywords {
   font-size: 1.3em;
@@ -181,7 +182,7 @@ br {
 .about-skills span {
   color: #777;
 }
-
+/*modal*/
 .modal-body {
   height: 500px;
 }
@@ -191,6 +192,7 @@ br {
   width: 100%;
   padding: 10px;
 }
+/*end*/
 
 .about-intro {
   font-size: 1.1em;
@@ -407,6 +409,10 @@ br {
   .masthead-intro p {
     font-size: 1.2em;
 /*    margin-bottom: 12px; */
+  }
+
+  .about-intro p {
+    margin-bottom: 10px;
   }
 
   br {
