@@ -422,6 +422,10 @@ br {
   #contact {
     padding-bottom: 50px;
   }
+
+  .social-icons a {
+    color: #fff;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
