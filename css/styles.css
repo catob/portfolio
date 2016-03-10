@@ -63,6 +63,28 @@ br {
   color: #3E51A3;
 }
 
+.masthead-intro a,
+.hover-content a,
+.contenthover a {
+  color: #444;
+  transition: color 600ms;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #444;
+  padding: 14px 20px;
+}
+
+.masthead-intro a:hover,
+.contenthover a:hover {
+  color: #3E51A3;
+}
+
+.hover-content a:hover {
+  color: #fff;
+}
+
 /* nav */
 .navbar {
   font-size: 1.1em;
@@ -121,25 +143,6 @@ br {
   font-size: 1.7em;
   font-weight: 300;
   margin: 10px 0 25px;
-}
-
-.masthead-intro a,
-.hover-content a,
-.contenthover a {
-  color: #444;
-  transition: color 600ms;
-  text-decoration: none;
-  font-weight: 300;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 1px solid #444;
-  padding: 14px 20px;
-}
-
-.masthead-intro a:hover,
-.hover-content a:hover,
-.contenthover a:hover {
-  color: #3E51A3;
 }
 
 /* about */
