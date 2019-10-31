@@ -238,18 +238,15 @@ ul {
     font-size: 1.2em;
   }
 
+  .about-keywords {
+    padding-top: 10px;
+  }
+
   #contact {
     padding-bottom: 50px;
   }
 
   .social-icons a {
     color: #fff;
-  }
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-  .about-keywords {
-    padding-top: 10px;
   }
 }
