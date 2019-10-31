@@ -4,21 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cato Benjaminsen</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Custom styles -->
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- Google Fonts -->
+    <link href="css/base.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,300' rel='stylesheet' type='text/css'>
-    <!-- Google Maps api -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8BElPaPozNPky-oxaSIEvo_ZyvT4XUI8"></script>
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <!-- GA -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,187 +19,45 @@
       ga('send', 'pageview');
     </script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" id="top">
-    <!-- navbar starts here -->
+  <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="project-name pull-left">
           <a href="#top">Cato Benjaminsen</a>
         </div>
-        <div class="navbar-header pull-right">
-          <button type="button" class="navbar-toggle" data-toggle="collapse"
-          data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#about">about</a></li>
-              <li><a href="#work">work</a></li>
-              <li><a href="#contact">contact</a></li>
-              <!-- <li><a href="#faq">faq</a></li> -->
-            </ul>
-          </div>
-        </div>
-      </div> <!-- end navcontainer -->
-    </nav> <!-- navbar ends here -->
-    <!-- Header -->
+      </div>
+    </nav>
     <header class="masthead">
       <div id="masthead-overlay">
         <div class="container">
           <div class="masthead-intro hidden">
             <h1>Hello.</h1>
-            <p>I'm Cato, a web developer<br> based in Berlin.</p>
-            <a href="#work" class="masthead-button btn btn-md smooth-button hidden">Check out my work</a>
+            <p>I'm Cato, a developer based in Berlin.</p>
           </div>
         </div>
       </div>
     </header>
-    <!-- About Section -->
     <section id="about">
-      <div class="container anchor">
-        <h1>About.</h1>
+      <div class="container">
         <div class="row">
-          <div class="col-md-4 col-xs-12">
+          <div class="col-md-3 col-xs-12">
             <div class="headshot">
               <img src="img/headshot.jpg" class="img-responsive appear grow" alt="Picture of me">
               <img src="img/headshot-silly.jpg" class="img-responsive grow" alt="Silly picture of me">
             </div>
           </div>
-          <div class="col-md-8 col-xs-12">
-            <div class="about-keywords">
-              <p><span>who // </span>Cato Benjaminsen</p>
-              <p><span>what // </span>Web Development</p>
-              <p><span>where // </span>Berlin</p>
-              <p><span>when // </span>2014 - Present</p>
-              <p><span>why // </span>Passion</p>
-            </div>
-            <div class="about-skills">
-              <p>Ruby on Rails<span> // </span>HTML5<span> // </span>CSS3<span> // </span>JavaScript<span> // </span>jQuery<span> // </span>Git</p>
-            </div>
-            <!-- resume modal -->
-            <div class="modal-button">
-              <button type="button" class="btn custom-button" data-toggle="modal" data-target=".bs-example-modal-lg">Resume</button>
-              <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-backdrop="static" data-keyboard="false">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">Resume</h4>
-                    </div>
-                    <div class="modal-body">
-                      <!-- <iframe id="modal-frame" src="cato_resume.pdf" frameborder="0"></iframe> -->
-                      <object id="modal-frame" type="application/pdf" data="cato_resume.pdf" width="500" height="500"></object>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- modal end -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-xs-12">
-            <div class="about-intro text-justify">
-              <p>My name is Cato Benjaminsen and I'm a freelance web developer based in Berlin. I build simple and responsive websites that are easy to update and maintain. Take a look at my portfolio and don't hesitate to contact me if you think I can be of service for you.</p>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-6 col-xs-12 keywords">
-            <div class="about-development">
-              <i class="fa fa-code"></i>
-              <h2>Development</h2>
-              <p>The building blocks that make it all possible. Using the newest technologies to make sure the website is easy to manage and keep up to date.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-xs-12 keywords">
-            <div class="about-development">
-              <i class="fa fa-mobile"></i>
-              <h2>Responsive Web Design</h2>
-              <p>No matter what device or screen size you are using, I make sure the website looks, and stays great.</p>
-            </div>
+          <div class="col-md-3 col-xs-12 about-keywords">
+            <p><span>// </span>Web Development</p>
+            <p><span>// </span>CareerFoundry</p>
+            <p><span>// </span>Ruby on Rails<span> // </span>ReactJS<span></p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Work Section -->
-    <section id="work">
-      <div class="container anchor">
-        <h1>Work.</h1>
-        <div class="row text-center">
-          <div class="col-md-6 col-xs-12 img-left">
-            <ul class="thumbs">
-              <li>
-                <img src="img/ginterior.jpg" class="img-responsive appear" alt="Portfolio" />
-                <div class="hover-content">
-                  <h3>Ginterior.no</h3>
-                  <p class="text-left">Fully responsive Ruby on Rails application for Interior Designer Ingrid Gerhardsen including custom admin backend for updating content.</p>
-                  <a href="http://www.ginterior.no" class="btn btn-md" target="_blank">Check it out</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-xs-12 img-right">
-            <ul class="thumbs">
-              <li>
-                <img src="img/bike_berlin.jpg" class="img-responsive appear" alt="" />
-                <div class="hover-content">
-                  <h3>Bike Berlin</h3>
-                  <p class="text-justify">Bike Berlin is a demo app I built when I was learning and exploring Ruby on Rails at CareerFoundry.</p>
-                  <a href="https://bikeberlindemo.herokuapp.com/" class="btn btn-md" target="_blank">Check it out</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-xs-12 img-left">
-            <ul class="thumbs">
-              <li>
-                <img src="img/shopping_list.jpg" class="img-responsive appear" alt="" />
-                <div class="hover-content">
-                  <h3>Shopping List</h3>
-                  <p class="text-justify">Small shopping list app build with JavaScript.</p>
-                  <a href="http://catob.github.io/shopping-list/" class="btn btn-md" target="_blank">Check it out</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-xs-12 img-right">
-            <ul class="thumbs">
-              <li>
-                <img src="img/work-1.jpg" class="img-responsive appear" alt="" />
-                <div class="hover-content">
-                  <h3>Portfolio</h3>
-                  <p class="text-justify">Static html portfolio page that I built for the front-end class at Thinkful.</p>
-                  <a href="http://catob.github.io/portfolio-cato/" class="btn btn-md" target="_blank">Check it out</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Section -->
     <section id="contact">
-      <div class="container anchor">
-        <h1>Contact.</h1>
+      <div class="container">
         <div class="row">
-          <div class="col-md-4 col-xs-12">
-            <div class="contact-info">
-              <p><span> // </span>Cato Benjaminsen</p>
-              <p><span> // </span><i class="fa fa-phone"></i> 49 152 37793797</p>
-              <p><span> // </span><i class="fa fa-envelope"></i> cato.benjaminsen@gmail.com</p>
-              <!-- google maps api -->
-              <div class="embed-responsive embed-responsive-16by9 map-container appear">
-                <div class="embed-responsive-item" id="map-canvas" style="height:291px; max-width:460px;">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-offset-1 col-md-7 col-xs-12">
+          <div class="col-md-6 col-xs-12">
             <form action="http://formspree.io/cato.benjaminsen@gmail.com" method="post" name="login">
               <div class="form-group">
                 <label for="name">Your Name:</label>
@@ -225,70 +74,16 @@
         </div>
       </div>
     </section>
-    <!-- FAQ Section -->
-    <!-- <section id="faq">
-      <div class="container anchor">
-        <h1>FAQ.</h1>
-        <div class="panel-group faq-questions" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-              <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What am i?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                AWESOME
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Question 2
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-              Pitchfork trust fund meggings fashion axe +1. Aesthetic gastropub trust fund, kogi messenger bag hoodie Bushwick Pitchfork 8-bit chambray bitters readymade hashtag cred sriracha. Raw denim lomo PBR&amp;B 3 wolf moon heirloom Williamsburg master cleanse yr. Quinoa tilde church-key viral Schlitz literally, cliche direct trade McSweeney's Pitchfork freegan cray cronut. DIY mixtape lumbersexual flexitarian occupy. American Apparel ennui disrupt four loko, Tumblr Etsy whatever keytar. Church-key Vice 3 wolf moon forage sriracha fixie.
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Question 3
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Footer -->
     <footer id="footer">
       <div class="container">
-        <p class="copyright">&copy; 2016, Cato Benjaminsen</p>
+        <p class="copyright">&copy; 2019, Cato Benjaminsen</p>
         <div class="social-icons pull-right">
           <a href="http://github.com/catob" target="_blank"><i class="fa fa-github"></i></a>
           <a href="http://linkedin.com/in/catobenjaminsen" target="_blank"><i class="fa fa-linkedin"></i></a>
           <a href="http://twitter.com/catobenj" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="mailto:cato.benjaminsen@gmail.com"><i class="fa fa-envelope"></i></a>
         </div>
       </div>
     </footer>
-    <!-- JavaScript -->
-    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
