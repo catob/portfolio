@@ -85,6 +85,10 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+  .masthead-intro {
+    width: 70%;
+  }
+
   .masthead-intro p {
     font-size: 1.2em;
   }
