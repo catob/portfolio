@@ -18,15 +18,4 @@ $(document).ready(function(){
       }
     });
   });
-
-  // character counter on text input field
-  $("textarea").on("keyup", function(){
-    var charCount = $("textarea").val().length;
-    $("#char-count").html(charCount);
-    if (charCount > 500) {
-      $("#char-count").css("color", "#FF0000");
-    } else {
-      $("#char-count").css("color", "#3E51A3");
-    };
-  });
 });
