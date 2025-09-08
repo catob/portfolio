@@ -17,7 +17,9 @@ $(document).ready(function () {
   });
 
   // Modal functionality
-  $(".project-link-item[data-modal]").on("click", function (event) {
+  $(
+    ".project-link-item[data-modal], .bio-link[data-modal], .bio-text-link[data-modal]"
+  ).on("click", function (event) {
     event.preventDefault();
     var modalId = $(this).data("modal");
     $("#" + modalId).fadeIn(300);
