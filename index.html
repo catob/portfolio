@@ -23,42 +23,153 @@
   </head>
   <body>
     <header class="masthead">
-      <div id="masthead-overlay">
-        <div class="container">
-          <div class="masthead-intro hidden">
-            <h1>Hello.</h1>
-            <h3>I'm Cato, a software engineer based in Berlin.</h3>
+      <div class="container">
+        <div class="masthead-intro hidden">
+          <h1>Hello.</h1>
+          <h3>I'm Cato, a software engineer based in Berlin.</h3>
+          <div class="freelance">
             <p>
-              Check out this app I'm working on:
-              <a href="https://loyalties.io" target="_blank"
-                ><b>Loyalties</b></a
-              >
+              I'm currently open for freelance projects! Let's build something
+              great together.
             </p>
-            <div class="freelance">
-              <p>
-                I'm currently open for freelance projects! Let’s build something
-                great together.
-              </p>
+          </div>
+          <div class="projects-preview">
+            <h5>Recent Projects:</h5>
+            <div class="project-links-list">
+              <a
+                href="#"
+                class="project-link-item"
+                data-modal="loyalties-modal"
+              >
+                <img
+                  src="img/loyalties.png"
+                  alt="Loyalties"
+                  class="project-icon"
+                />
+                Loyalties - Customer loyalty mobile app
+              </a>
+              <a
+                href="#"
+                class="project-link-item"
+                data-modal="zero-circle-modal"
+              >
+                <img
+                  src="img/zero-circle.png"
+                  alt="Zero Circle"
+                  class="project-icon"
+                />
+                Zero Circle - 0% product & place web platform
+              </a>
             </div>
-            <div class="tech-stack">
-              <h5>My tech stack:</h5>
-              <p>React, React Native, TypeScript, Rails, and more.</p>
-            </div>
-            <div class="social-icons">
-              <a href="https://github.com/catob" target="_blank"
-                ><i class="fa fa-github"></i
-              ></a>
-              <a href="https://linkedin.com/in/catobenjaminsen" target="_blank"
-                ><i class="fa fa-linkedin"></i
-              ></a>
-              <a href="mailto:cato@loyalties.io" target="_blank"
-                ><i class="fa fa-envelope"></i
-              ></a>
-            </div>
+          </div>
+          <div class="tech-stack">
+            <h5>My tech stack:</h5>
+            <p>React, React Native, TypeScript, Ruby on Rails, and more.</p>
+          </div>
+          <div class="social-icons">
+            <a href="https://github.com/catob" target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/catobenjaminsen" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="mailto:cato@loyalties.io" target="_blank"
+              ><i class="fa fa-envelope"></i
+            ></a>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Project Modals -->
+
+    <!-- Loyalties Modal -->
+    <div id="loyalties-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-hero">
+          <img src="img/loyalties-preview.webp" alt="Loyalties Project" />
+        </div>
+        <div class="modal-body">
+          <h2>Loyalties</h2>
+          <p class="modal-description">
+            Loyalties is a mobile app that helps small businesses attract and
+            retain customers through customizable digital reward systems. It
+            replaces outdated paper cards with a sleek, easy-to-use solution and
+            makes it simple for customers to keep all their loyalty rewards in
+            one app. I led the engineering, building the platform end-to-end
+            with React Native for the mobile app, a Ruby on Rails API backend,
+            and PostgreSQL on Fly.io, while collaborating with a designer on the
+            user experience.
+          </p>
+          <div class="modal-tech">
+            <h4>Technologies Used:</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Ruby onRails</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="modal-links">
+            <a
+              href="https://apps.apple.com/us/app/loyalties-io/id6587571478"
+              target="_blank"
+              class="modal-link"
+            >
+              <i class="fa fa-external-link"></i> Apple App Store
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.cato.benjaminsen.loyaltyfrontend"
+              target="_blank"
+              class="modal-link"
+            >
+              <i class="fa fa-external-link"></i> Google Play Store
+            </a>
+            <a href="https://loyalties.io" target="_blank" class="modal-link">
+              <i class="fa fa-external-link"></i> Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Zero Circle Modal -->
+    <div id="zero-circle-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-hero">
+          <img src="img/zero-circle-preview.webp" alt="Zero Circle Project" />
+        </div>
+        <div class="modal-body">
+          <h2>Zero Circle</h2>
+          <p class="modal-description">
+            Zero Circle is a web platform that helps people discover and explore
+            zero-percent products and places. From alcohol-free drinks to cafés
+            and shops offering alternatives. It combines a clean marketplace
+            experience with multi-language support, ratings, and favorites,
+            making it easy for users to find and enjoy new options. I led the
+            engineering, building the platform end-to-end with Next.js, Prisma,
+            and PostgreSQL, hosted on Vercel, while collaborating with the team
+            that developed the concept and design.
+          </p>
+          <div class="modal-tech">
+            <h4>Technologies Used:</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">Next.JS</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="modal-links">
+            <a href="https://zero-circle.de" target="_blank" class="modal-link">
+              <i class="fa fa-external-link"></i> Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
