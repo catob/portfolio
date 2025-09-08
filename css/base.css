@@ -1,3 +1,4 @@
+/* Reset & Base Styles */
 * {
   box-sizing: border-box;
 }
@@ -6,16 +7,11 @@ body {
   font-family: "Work Sans", sans-serif;
   overflow-x: hidden;
   background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 
-.hidden {
-  display: none;
-}
-
-.appear {
-  opacity: 0;
-}
-
+/* Typography */
 h1 {
   font-size: 4em;
   color: #444;
@@ -31,6 +27,13 @@ h2 {
   font-size: 1.8em;
 }
 
+h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
 p {
   color: #444;
   margin: 0;
@@ -38,31 +41,35 @@ p {
   line-height: 1.6;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   color: #444;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   color: #3e51a3;
 }
 
-/* header */
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+.appear {
+  opacity: 0;
+}
+
+/* ==========================================================================
+   Masthead Section
+   ========================================================================== */
+
 .masthead {
   background-image: url("../img/hero-2.jpg");
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   height: 80vh;
   width: 100%;
-  overflow: auto;
   position: relative;
   min-height: 400px;
 }
@@ -72,19 +79,7 @@ a:hover {
   top: 20%;
 }
 
-.masthead-intro h3 {
-  font-size: 1.6em;
-  font-weight: 500;
-  margin: 10px 0;
-  line-height: 1.4;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin: 10px 0;
-}
-
+/* Freelance Section */
 .freelance p {
   font-size: 1.3em;
   font-weight: 300;
@@ -92,25 +87,7 @@ p {
   line-height: 1.6;
 }
 
-.tech-stack {
-  font-size: 1rem;
-  color: #6c757d;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.tech-stack h5 {
-  margin-bottom: 15px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #6c757d;
-}
-
-.tech-stack p {
-  font-size: 1.2em;
-  line-height: 1.4;
-}
-
+/* Projects Preview Section */
 .projects-preview {
   margin-top: 30px;
 }
@@ -148,12 +125,6 @@ p {
   text-decoration: none;
 }
 
-.project-link-item i {
-  font-size: 0.9em;
-  width: 16px;
-  text-align: center;
-}
-
 .project-icon {
   width: 16px;
   height: 16px;
@@ -161,7 +132,42 @@ p {
   margin-right: 8px;
 }
 
-/* Modal Styles */
+/* Tech Stack Section */
+.tech-stack {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.tech-stack h5 {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.tech-stack p {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  font-size: 1.8em;
+  padding-right: 15px;
+  transition: color 600ms;
+}
+
+/* ==========================================================================
+   Modal Styles
+   ========================================================================== */
+
 .modal {
   display: none;
   position: fixed;
@@ -225,7 +231,7 @@ p {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  min-width: 44px; /* Better touch target */
+  min-width: 44px;
   min-height: 44px;
 }
 
@@ -327,8 +333,62 @@ p {
   font-size: 1.1em;
 }
 
-/* Responsive Modal Design */
-@media (max-width: 768px) {
+/* ==========================================================================
+   Responsive Design - Mobile First Approach
+   ========================================================================== */
+
+/* Mobile Styles (default - up to 767px) */
+@media (max-width: 767px) {
+  .masthead {
+    background-image: none;
+    background-color: #f8f9fa;
+  }
+
+  .masthead-intro {
+    width: 70%;
+    top: 15%;
+    text-align: left;
+  }
+
+  .masthead-intro h1 {
+    font-size: 3em;
+  }
+
+  .masthead-intro h3 {
+    font-size: 1.3em;
+  }
+
+  .freelance p {
+    font-size: 1em;
+  }
+
+  .projects-preview {
+    margin-top: 25px;
+  }
+
+  .project-links-list {
+    gap: 4px;
+  }
+
+  .project-link-item {
+    font-size: 0.9em;
+    padding: 6px 0;
+  }
+
+  .tech-stack {
+    margin-top: 25px;
+  }
+
+  .social-icons {
+    margin-top: 30px;
+  }
+
+  .social-icons a {
+    font-size: 1.8em;
+    padding-right: 15px;
+  }
+
+  /* Modal adjustments for mobile */
   .modal-content {
     width: 95%;
     margin: 5% auto;
@@ -358,14 +418,70 @@ p {
   }
 }
 
+/* Small Mobile (up to 450px) */
 @media (max-width: 450px) {
+  .masthead-intro {
+    width: 85%;
+    top: 10%;
+    padding: 0 20px;
+  }
+
+  .masthead-intro h1 {
+    font-size: 2.5em;
+  }
+
+  .masthead-intro h3 {
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+
+  .freelance p {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+
+  .projects-preview {
+    margin-top: 30px;
+  }
+
+  .projects-preview h5 {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .project-link-item {
+    font-size: 0.85em;
+    padding: 8px 0;
+    line-height: 1.4;
+  }
+
+  .tech-stack {
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+
+  .tech-stack h5 {
+    font-size: 14px;
+  }
+
+  .tech-stack p {
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    font-size: 1.7em;
+    padding-right: 12px;
+  }
+
+  /* Modal adjustments for small mobile */
   .modal-content {
     width: 98%;
     margin: 2% auto;
+    max-height: 90vh;
   }
 
   .modal-body {
-    padding: 20px 20px 100px 20px;
+    padding: 20px 20px 60px 20px;
   }
 
   .modal-links {
@@ -375,21 +491,111 @@ p {
   .modal-hero {
     height: 200px;
   }
+
+  .modal-body h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+
+  .modal-description {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+
+  .modal-tech h4 {
+    font-size: 1em;
+  }
+
+  .tech-tag {
+    font-size: 0.8em;
+    padding: 4px 10px;
+  }
+
+  .modal-link {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  .close {
+    top: 10px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+  }
 }
 
-.social-icons {
-  display: inline;
-  margin-top: 20px;
-  margin-bottom: 30px;
+/* Very Small Mobile (up to 320px) */
+@media (max-width: 320px) {
+  .masthead-intro {
+    width: 90%;
+    top: 2%;
+    padding: 0 15px;
+  }
+
+  .masthead-intro h1 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+  }
+
+  .masthead-intro h3 {
+    font-size: 1em;
+  }
+
+  .project-link-item {
+    font-size: 0.8em;
+  }
+
+  .modal-content {
+    width: 99%;
+    margin: 1% auto;
+  }
+
+  .modal-body {
+    padding: 15px 15px 50px 15px;
+  }
+
+  .modal-hero {
+    height: 150px;
+  }
+
+  .modal-body h2 {
+    font-size: 1.4em;
+  }
+
+  .modal-description {
+    font-size: 0.9em;
+  }
 }
 
-.social-icons a {
-  font-size: 1.8em;
-  padding-right: 15px;
-  transition: color 600ms;
+/* Tablet Styles (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .masthead-intro {
+    width: 75%;
+    top: 25%;
+    text-align: left;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 4% auto;
+  }
 }
 
-/* Large desktop screens */
+/* Desktop Styles (1024px to 1399px) */
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .masthead-intro {
+    width: 80%;
+    text-align: left;
+  }
+
+  .modal-content {
+    width: 85%;
+    margin: 3% auto;
+  }
+}
+
+/* Large Desktop Styles (1400px+) */
 @media (min-width: 1400px) {
   .masthead-intro {
     width: 50%;
@@ -462,284 +668,7 @@ p {
   }
 }
 
-/* Tablet and small desktop */
-@media (max-width: 1024px) {
-  .masthead-intro {
-    width: 80%;
-    text-align: left;
-  }
-
-  .modal-content {
-    width: 85%;
-    margin: 3% auto;
-  }
-}
-
-/* Medium tablets */
-@media (max-width: 768px) and (min-width: 451px) {
-  .masthead-intro {
-    width: 75%;
-    top: 25%;
-    text-align: left;
-  }
-
-  .modal-content {
-    width: 90%;
-    margin: 4% auto;
-  }
-}
-
-/* Mobile landscape and small tablets */
-@media (max-width: 767px) {
-  .masthead {
-    background-image: none;
-    background-color: #f8f9fa;
-  }
-
-  .masthead-intro {
-    width: 70%;
-    top: 15%;
-    text-align: left;
-  }
-
-  .masthead-intro h1 {
-    font-size: 3em;
-  }
-
-  .masthead-intro h3 {
-    font-size: 1.3em;
-  }
-
-  .freelance p {
-    font-size: 1em;
-  }
-
-  .projects-preview {
-    margin-top: 25px;
-  }
-
-  .project-links-list {
-    gap: 4px;
-  }
-
-  .project-link-item {
-    font-size: 0.9em;
-    padding: 6px 0;
-  }
-
-  .tech-stack {
-    margin-top: 25px;
-  }
-
-  .social-icons {
-    margin-top: 20px;
-  }
-
-  .social-icons a {
-    font-size: 1.4em;
-    padding-right: 15px;
-  }
-
-  .modal-content {
-    width: 95%;
-    margin: 5% auto;
-    max-height: 85vh;
-  }
-
-  .modal-body {
-    padding: 25px;
-  }
-
-  .modal-body h2 {
-    font-size: 1.8em;
-  }
-
-  .modal-description {
-    font-size: 1em;
-  }
-
-  .modal-links {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .modal-link {
-    justify-content: center;
-    padding: 10px 20px;
-  }
-}
-
-/* Mobile portrait */
-@media (max-width: 450px) {
-  .masthead {
-    background-image: none;
-    background-color: #f8f9fa;
-    width: 100%;
-  }
-
-  .masthead-intro {
-    width: 85%;
-    top: 10%;
-    padding: 0 20px;
-  }
-
-  .masthead-intro h1 {
-    font-size: 2.5em;
-  }
-
-  .masthead-intro h3 {
-    font-size: 1.1em;
-    line-height: 1.4;
-  }
-
-  .freelance p {
-    font-size: 0.95em;
-    line-height: 1.5;
-  }
-
-  .freelance p {
-    font-size: 0.9em;
-  }
-
-  .projects-preview {
-    margin-top: 30px;
-  }
-
-  .projects-preview h5 {
-    font-size: 14px;
-    margin-bottom: 12px;
-  }
-
-  .project-links-list {
-    gap: 4px;
-  }
-
-  .project-link-item {
-    font-size: 0.85em;
-    padding: 8px 0;
-    line-height: 1.4;
-  }
-
-  .project-link-item i {
-    width: 14px;
-    font-size: 0.8em;
-  }
-
-  .tech-stack {
-    margin-top: 30px;
-    font-size: 0.9rem;
-  }
-
-  .tech-stack h5 {
-    font-size: 14px;
-  }
-
-  .tech-stack p {
-    font-size: 12px;
-  }
-
-  .social-icons {
-    margin-top: 25px;
-  }
-
-  .social-icons a {
-    font-size: 1.3em;
-    padding-right: 12px;
-  }
-
-  .modal-content {
-    width: 98%;
-    margin: 2% auto;
-    max-height: 90vh;
-  }
-
-  .modal-body {
-    padding: 20px;
-  }
-
-  .modal-hero {
-    height: 200px;
-  }
-
-  .modal-body h2 {
-    font-size: 1.6em;
-    margin-bottom: 15px;
-  }
-
-  .modal-description {
-    font-size: 0.95em;
-    line-height: 1.5;
-  }
-
-  .modal-tech h4 {
-    font-size: 1em;
-  }
-
-  .tech-tag {
-    font-size: 0.8em;
-    padding: 4px 10px;
-  }
-
-  .modal-link {
-    font-size: 0.9em;
-    padding: 8px 16px;
-  }
-
-  .close {
-    top: 10px;
-    right: 15px;
-    width: 35px;
-    height: 35px;
-    font-size: 24px;
-    background: #000 !important;
-    border: 2px solid #fff;
-  }
-}
-
-/* Very small screens */
-@media (max-width: 320px) {
-  .masthead-intro {
-    width: 90%;
-    top: 2%;
-    padding: 0 15px;
-  }
-
-  .masthead-intro h1 {
-    font-size: 2.2em;
-    margin-bottom: 25px;
-  }
-
-  .masthead-intro h3 {
-    font-size: 1em;
-  }
-
-  .project-link-item {
-    font-size: 0.8em;
-  }
-
-  .modal-content {
-    width: 99%;
-    margin: 1% auto;
-  }
-
-  .modal-body {
-    padding: 15px 15px 80px 15px;
-  }
-
-  .modal-hero {
-    height: 150px;
-  }
-
-  .modal-body h2 {
-    font-size: 1.4em;
-  }
-
-  .modal-description {
-    font-size: 0.9em;
-  }
-}
-
-/* Landscape orientation on mobile */
+/* Landscape Mobile (height-based) */
 @media (max-height: 500px) and (orientation: landscape) {
   .masthead-intro {
     top: 15%;
