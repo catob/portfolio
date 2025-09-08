@@ -17,15 +17,14 @@ $(document).ready(function () {
   });
 
   // Modal functionality
-  $(".project-link-item[data-modal], .bio-link[data-modal]").on(
-    "click",
-    function (event) {
-      event.preventDefault();
-      var modalId = $(this).data("modal");
-      $("#" + modalId).fadeIn(300);
-      $("body").css("overflow", "hidden"); // Prevent background scrolling
-    }
-  );
+  $(
+    ".project-link-item[data-modal], .bio-link[data-modal], .bio-text-link[data-modal]"
+  ).on("click", function (event) {
+    event.preventDefault();
+    var modalId = $(this).data("modal");
+    $("#" + modalId).fadeIn(300);
+    $("body").css("overflow", "hidden"); // Prevent background scrolling
+  });
 
   // Close modal when clicking the X
   $(".close").on("click", function () {

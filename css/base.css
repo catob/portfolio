@@ -346,6 +346,25 @@ a:hover {
   text-decoration: none;
 }
 
+/* Bio Text Link Section */
+.bio-link-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bio-text-link {
+  color: #3e51a3;
+  text-decoration: underline;
+  font-size: 1.1em;
+  font-weight: 400;
+  transition: color 600ms, text-decoration 600ms;
+}
+
+.bio-text-link:hover {
+  color: #2c3e8a;
+  text-decoration: underline;
+}
+
 /* ==========================================================================
    Responsive Design - Mobile First Approach
    ========================================================================== */
