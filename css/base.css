@@ -244,6 +244,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .modal-body {
@@ -458,6 +459,7 @@ p {
 @media (max-width: 1024px) {
   .masthead-intro {
     width: 80%;
+    text-align: left;
   }
 
   .modal-content {
@@ -471,6 +473,7 @@ p {
   .masthead-intro {
     width: 75%;
     top: 25%;
+    text-align: left;
   }
 
   .modal-content {
@@ -488,6 +491,7 @@ p {
   .masthead-intro {
     width: 70%;
     top: 25%;
+    text-align: left;
   }
 
   .masthead-intro h1 {
