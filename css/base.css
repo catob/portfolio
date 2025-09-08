@@ -333,6 +333,19 @@ a:hover {
   font-size: 1.1em;
 }
 
+/* Bio Modal - No Hero Image */
+#bio-modal .modal-body {
+  padding-top: 50px;
+}
+
+.bio-link {
+  display: inline-block;
+}
+
+.bio-link:hover {
+  text-decoration: none;
+}
+
 /* ==========================================================================
    Responsive Design - Mobile First Approach
    ========================================================================== */
