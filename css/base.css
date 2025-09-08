@@ -5,6 +5,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   overflow-x: hidden;
+  background-color: #f8f9fa;
 }
 
 .hidden {
@@ -59,11 +60,11 @@ a:hover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   overflow: auto;
   position: relative;
-  min-height: 500px;
+  min-height: 400px;
 }
 
 .masthead-intro {
@@ -364,7 +365,11 @@ p {
   }
 
   .modal-body {
-    padding: 20px 20px 60px 20px;
+    padding: 20px 20px 100px 20px;
+  }
+
+  .modal-links {
+    margin-bottom: 40px;
   }
 
   .modal-hero {
@@ -487,12 +492,13 @@ p {
 /* Mobile landscape and small tablets */
 @media (max-width: 767px) {
   .masthead {
-    background-position: center top;
+    background-image: none;
+    background-color: #f8f9fa;
   }
 
   .masthead-intro {
     width: 70%;
-    top: 25%;
+    top: 15%;
     text-align: left;
   }
 
@@ -566,19 +572,19 @@ p {
 /* Mobile portrait */
 @media (max-width: 450px) {
   .masthead {
+    background-image: none;
+    background-color: #f8f9fa;
     width: 100%;
-    background-position: center top;
   }
 
   .masthead-intro {
     width: 85%;
-    top: 20%;
+    top: 10%;
     padding: 0 20px;
   }
 
   .masthead-intro h1 {
     font-size: 2.5em;
-    margin-bottom: 30px;
   }
 
   .masthead-intro h3 {
@@ -589,10 +595,6 @@ p {
   .freelance p {
     font-size: 0.95em;
     line-height: 1.5;
-  }
-
-  .freelance {
-    margin-top: 25px;
   }
 
   .freelance p {
@@ -698,6 +700,7 @@ p {
 @media (max-width: 320px) {
   .masthead-intro {
     width: 90%;
+    top: 2%;
     padding: 0 15px;
   }
 
@@ -720,7 +723,7 @@ p {
   }
 
   .modal-body {
-    padding: 15px 15px 50px 15px;
+    padding: 15px 15px 80px 15px;
   }
 
   .modal-hero {
