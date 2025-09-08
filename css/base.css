@@ -4,6 +4,7 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .hidden {
@@ -209,12 +210,13 @@ p {
   position: absolute;
   top: 15px;
   right: 20px;
-  color: #aaa;
+  color: #fff;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
   z-index: 1001;
-  background: rgba(255, 255, 255, 0.9);
+  background: #000 !important;
+  border: 2px solid #fff;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -228,8 +230,8 @@ p {
 
 .close:hover,
 .close:focus {
-  color: #000;
-  background: rgba(255, 255, 255, 1);
+  color: #fff;
+  background: #000 !important;
   transform: scale(1.1);
 }
 
@@ -564,7 +566,7 @@ p {
 /* Mobile portrait */
 @media (max-width: 450px) {
   .masthead {
-    width: 130%;
+    width: 100%;
     background-position: center top;
   }
 
@@ -687,6 +689,8 @@ p {
     width: 35px;
     height: 35px;
     font-size: 24px;
+    background: #000 !important;
+    border: 2px solid #fff;
   }
 }
 
