@@ -369,6 +369,13 @@ a:hover {
    Responsive Design - Mobile First Approach
    ========================================================================== */
 
+/* Adjust background position for medium screens where lamp covers text */
+@media (min-width: 768px) and (max-width: 900px) {
+  .masthead {
+    background-position: center top;
+  }
+}
+
 /* Mobile Styles (default - up to 767px) */
 @media (max-width: 767px) {
   .masthead {
