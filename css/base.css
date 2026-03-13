@@ -196,6 +196,7 @@ a:hover {
 .social-icons svg {
   width: 26px;
   height: 26px;
+  flex-shrink: 0;
 }
 
 .social-icons a:hover {
